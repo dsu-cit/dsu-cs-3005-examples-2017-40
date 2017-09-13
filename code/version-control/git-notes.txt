@@ -1,0 +1,30 @@
+Version Control
+---------------
+
+git
+
+To create a git repository:
+  git init
+
+To observe the current status:
+  git status
+
+To add file(s) to the repository:
+  git add file1 file2 ...
+
+To commit changes to the repository:
+  git commit -m 'log message'
+
+Use .gitignore to list filenames you do not want to
+manage with git.
+
+To see a history of log messages:
+  git log
+
+To checkout a specific commit:
+  git checkout long_signature_of_the_commit
+
+To checkout most recent version of code
+  git checkout master
+  
+
