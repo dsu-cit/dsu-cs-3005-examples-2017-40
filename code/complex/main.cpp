@@ -15,6 +15,20 @@ int main( ) {
   // c3 = c1.operator+( c2 );
   c3 = c1 + c2;
 
+  // operator<<( std::cout, c1 )
+  std::cout << c1 << " + " << c2 << " = " << c3 << std::endl;
+  
+  double n = 32.2;
+  c3 = c1 + n;
+  c3 = n + c1;
+
+  Complex c4;
+  c4 = c1 - c2;
+  std::cout << c1 << " - " << c2 << " = " << c4 << std::endl;
+
+  Complex c5;
+  c5 = c1 * c2;
+  std::cout << c1 << " * " << c2 << " = " << c5 << std::endl;
 
   return 0;
 };
