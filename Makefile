@@ -11,10 +11,10 @@ commit-push:
 	git push;
 
 update-web:
-	git add .
+	git add -A .
 	x=`git status | grep 'nothing to commit' | wc -l`; \
 	if [ "$$x" = "0" ]; then \
-		git commit -A -m 'automated daily commit'; \
+		git commit -m 'automated daily commit'; \
 	fi;
 	git push;
 	ssh cgl@helios "cd courses/$(REPO)/; git pull; make install-on-helios"
