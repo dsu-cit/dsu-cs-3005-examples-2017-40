@@ -170,3 +170,5 @@ make[1]: Entering directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
 rm -f web/examples.examples
 ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
 make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+Wed Sep 27 10:00:01 MDT 2017
+git add -A .
