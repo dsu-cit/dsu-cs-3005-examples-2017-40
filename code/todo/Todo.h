@@ -9,7 +9,7 @@ public:
   Todo( );
   Todo( const char *description, float priority );
   Todo( const char *description );
-  Todo( const Todo& src );
+  Todo( const Todo& src ); // copy constructor
 
   Todo& operator=( const Todo& rhs );
 
