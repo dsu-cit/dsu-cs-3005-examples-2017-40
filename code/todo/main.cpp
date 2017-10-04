@@ -3,8 +3,8 @@
 
 int main( ) {
 
-  // Todo t0( "Pick up milk.", 1.0 );
-  // Todo t1( "Grade homework assignment 1." );
+  Todo t0( "Pick up milk.", 1.0 );
+  Todo t1( "Grade homework assignment 1." );
   Todo t2;
 
   t2.setDescription( "Write AI to sort TODOs." );
@@ -21,8 +21,20 @@ int main( ) {
   // std::cout << t1 << std::endl;
 
   Todo t3( t2 );
+  std::cout << t2.getPriority( ) << " " << t2.getDescription( ) << std::endl;
+  std::cout << t3.getPriority( ) << " " << t3.getDescription( ) << std::endl;
 
-  // t2 = t0;
+  t2.setDescription( "Start writing AI to sort TODOs." );
+  std::cout << t2.getPriority( ) << " " << t2.getDescription( ) << std::endl;
+  t2.setDescription( "AStart writing AI to sort TODOs." );
+  std::cout << t2.getPriority( ) << " " << t2.getDescription( ) << std::endl;
+  t2.setDescription( "BStart writing AI to sort TODOs." );
+  std::cout << t2.getPriority( ) << " " << t2.getDescription( ) << std::endl;
+
+  t2 = t0;
+
+  std::cout << t0.getPriority( ) << " " << t0.getDescription( ) << std::endl;
+  std::cout << t2.getPriority( ) << " " << t2.getDescription( ) << std::endl;
 
   // std::cout << t0 << std::endl;
   // std::cout << t1 << std::endl;
