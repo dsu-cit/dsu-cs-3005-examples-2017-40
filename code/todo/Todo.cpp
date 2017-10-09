@@ -19,8 +19,8 @@ Todo::Todo( const char *description )
 
 
 Todo::Todo( const Todo& src ) 
-  : mDescription( 0 ), mPriority( src.mPriority ) {
-  setDescription( src.mDescription );
+  : mDescription( 0 ), mPriority( 1.0 ) {
+  *this = src;
 }
 
 Todo::~Todo( ) {
@@ -30,6 +30,10 @@ Todo::~Todo( ) {
 }
 
 Todo& Todo::operator=( const Todo& rhs ) {
+  setPriority( rhs.mPriority );
+  setDescription( rhs.mDescription );
+  
+  return *this;
 }
 
 bool Todo::setDescription( const char *description ) {

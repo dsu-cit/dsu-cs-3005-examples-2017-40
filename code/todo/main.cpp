@@ -20,6 +20,8 @@ int main( ) {
   // std::cout << t0.getDescription( ) << " " << t0.getPriority( ) << std::endl;
   // std::cout << t1 << std::endl;
 
+  t1.setDescription( 0 );
+
   Todo t3( t2 );
   std::cout << t2.getPriority( ) << " " << t2.getDescription( ) << std::endl;
   std::cout << t3.getPriority( ) << " " << t3.getDescription( ) << std::endl;
