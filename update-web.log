@@ -754,3 +754,47 @@ ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
 make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
 Fri Oct 20 10:00:01 MDT 2017
 git add -A .
+x=`git status | grep 'nothing to commit' | wc -l`; \
+if [ "$x" = "0" ]; then \
+	git commit -m 'automated daily commit'; \
+fi;
+[master 83d5bee] automated daily commit
+ 8 files changed, 169 insertions(+)
+ create mode 100644 code/robot/.gitignore
+ create mode 100644 code/robot/Makefile
+ create mode 100644 code/robot/Robot.cpp
+ create mode 100644 code/robot/Robot.h
+ create mode 100644 code/robot/VacuumRobot.cpp
+ create mode 100644 code/robot/VacuumRobot.h
+ create mode 100644 code/robot/main.cpp
+git push;
+To git@github.com:dsu-cit/dsu-cs-3005-examples-2017-40.git
+   fa05ba9..83d5bee  master -> master
+ssh cgl@helios "cd courses/dsu-cs-3005-examples-2017-40/; git pull; make install-on-helios"
+From github.com:dsu-cit/dsu-cs-3005-examples-2017-40
+   fa05ba9..83d5bee  master     -> origin/master
+Updating fa05ba9..83d5bee
+Fast-forward
+ code/robot/.gitignore      |  1 +
+ code/robot/Makefile        | 12 ++++++++++++
+ code/robot/Robot.cpp       | 36 ++++++++++++++++++++++++++++++++++++
+ code/robot/Robot.h         | 27 +++++++++++++++++++++++++++
+ code/robot/VacuumRobot.cpp | 16 ++++++++++++++++
+ code/robot/VacuumRobot.h   | 27 +++++++++++++++++++++++++++
+ code/robot/main.cpp        | 27 +++++++++++++++++++++++++++
+ update-web.log             | 23 +++++++++++++++++++++++
+ 8 files changed, 169 insertions(+)
+ create mode 100644 code/robot/.gitignore
+ create mode 100644 code/robot/Makefile
+ create mode 100644 code/robot/Robot.cpp
+ create mode 100644 code/robot/Robot.h
+ create mode 100644 code/robot/VacuumRobot.cpp
+ create mode 100644 code/robot/VacuumRobot.h
+ create mode 100644 code/robot/main.cpp
+( cd ../dsu-cs-3005-cplusplus; make install-examples )
+make[1]: Entering directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+rm -f web/examples.examples
+ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
+make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+Sat Oct 21 10:00:01 MDT 2017
+git add -A .
