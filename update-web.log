@@ -890,3 +890,59 @@ ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
 make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
 Wed Oct 25 10:00:01 MDT 2017
 git add -A .
+x=`git status | grep 'nothing to commit' | wc -l`; \
+if [ "$x" = "0" ]; then \
+	git commit -m 'automated daily commit'; \
+fi;
+[master b77be80] automated daily commit
+ 12 files changed, 364 insertions(+)
+ create mode 100644 code/y17m10d25p01-opengl-example-visual-studio.zip
+ create mode 100644 code/y17m10d25p02-opengl-example-unix.tgz
+ create mode 100644 code/y17m10d25p02-opengl-example-unix/Makefile
+ create mode 100644 code/y17m10d25p02-opengl-example-unix/README.txt
+ create mode 100644 code/y17m10d25p02-opengl-example-unix/app.cpp
+ create mode 100644 code/y17m10d25p02-opengl-example-unix/gl_draw.cpp
+ create mode 100644 code/y17m10d25p02-opengl-example-unix/glut_app.h
+ create mode 100644 code/y17m10d25p02-opengl-example-unix/glut_callback.cpp
+ create mode 100755 code/y17m10d25p02-opengl-example-unix/glut_main
+ create mode 100644 code/y17m10d25p02-opengl-example-unix/glut_main.cpp
+ create mode 100644 code/y17m10d25p03-opengl-example-x-code.tgz
+git push;
+To git@github.com:dsu-cit/dsu-cs-3005-examples-2017-40.git
+   68f583d..b77be80  master -> master
+ssh cgl@helios "cd courses/dsu-cs-3005-examples-2017-40/; git pull; make install-on-helios"
+From github.com:dsu-cit/dsu-cs-3005-examples-2017-40
+   68f583d..b77be80  master     -> origin/master
+Updating 68f583d..b77be80
+Fast-forward
+ code/y17m10d25p01-opengl-example-visual-studio.zip | Bin 0 -> 89538 bytes
+ code/y17m10d25p02-opengl-example-unix.tgz          | Bin 0 -> 9153 bytes
+ code/y17m10d25p02-opengl-example-unix/Makefile     |  37 +++++++
+ code/y17m10d25p02-opengl-example-unix/README.txt   |  45 +++++++++
+ code/y17m10d25p02-opengl-example-unix/app.cpp      |   7 ++
+ code/y17m10d25p02-opengl-example-unix/gl_draw.cpp  |  57 +++++++++++
+ code/y17m10d25p02-opengl-example-unix/glut_app.h   |  50 ++++++++++
+ .../glut_callback.cpp                              | 107 +++++++++++++++++++++
+ code/y17m10d25p02-opengl-example-unix/glut_main    | Bin 0 -> 19696 bytes
+ .../y17m10d25p02-opengl-example-unix/glut_main.cpp |  38 ++++++++
+ code/y17m10d25p03-opengl-example-x-code.tgz        | Bin 0 -> 14259 bytes
+ update-web.log                                     |  23 +++++
+ 12 files changed, 364 insertions(+)
+ create mode 100644 code/y17m10d25p01-opengl-example-visual-studio.zip
+ create mode 100644 code/y17m10d25p02-opengl-example-unix.tgz
+ create mode 100644 code/y17m10d25p02-opengl-example-unix/Makefile
+ create mode 100644 code/y17m10d25p02-opengl-example-unix/README.txt
+ create mode 100644 code/y17m10d25p02-opengl-example-unix/app.cpp
+ create mode 100644 code/y17m10d25p02-opengl-example-unix/gl_draw.cpp
+ create mode 100644 code/y17m10d25p02-opengl-example-unix/glut_app.h
+ create mode 100644 code/y17m10d25p02-opengl-example-unix/glut_callback.cpp
+ create mode 100755 code/y17m10d25p02-opengl-example-unix/glut_main
+ create mode 100644 code/y17m10d25p02-opengl-example-unix/glut_main.cpp
+ create mode 100644 code/y17m10d25p03-opengl-example-x-code.tgz
+( cd ../dsu-cs-3005-cplusplus; make install-examples )
+make[1]: Entering directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+rm -f web/examples.examples
+ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
+make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+Thu Oct 26 10:00:01 MDT 2017
+git add -A .
