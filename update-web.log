@@ -1038,3 +1038,53 @@ ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
 make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
 Mon Oct 30 10:00:01 MDT 2017
 git add -A .
+x=`git status | grep 'nothing to commit' | wc -l`; \
+if [ "$x" = "0" ]; then \
+	git commit -m 'automated daily commit'; \
+fi;
+[master bf37d9d] automated daily commit
+ 10 files changed, 279 insertions(+)
+ create mode 100644 code/wumpus-inheritance/Makefile
+ create mode 100644 code/wumpus-inheritance/gold.cpp
+ create mode 100644 code/wumpus-inheritance/gold.h
+ create mode 100755 code/wumpus-inheritance/main
+ create mode 100644 code/wumpus-inheritance/main.cpp
+ create mode 100644 code/wumpus-inheritance/object.cpp
+ create mode 100644 code/wumpus-inheritance/object.h
+ create mode 100644 code/wumpus-inheritance/pit.cpp
+ create mode 100644 code/wumpus-inheritance/pit.h
+git push;
+To git@github.com:dsu-cit/dsu-cs-3005-examples-2017-40.git
+   1397771..bf37d9d  master -> master
+ssh cgl@helios "cd courses/dsu-cs-3005-examples-2017-40/; git pull; make install-on-helios"
+From github.com:dsu-cit/dsu-cs-3005-examples-2017-40
+   1397771..bf37d9d  master     -> origin/master
+Updating 1397771..bf37d9d
+Fast-forward
+ code/wumpus-inheritance/Makefile   |   9 +++++
+ code/wumpus-inheritance/gold.cpp   |  31 ++++++++++++++
+ code/wumpus-inheritance/gold.h     |  27 +++++++++++++
+ code/wumpus-inheritance/main       | Bin 0 -> 29200 bytes
+ code/wumpus-inheritance/main.cpp   |  80 +++++++++++++++++++++++++++++++++++++
+ code/wumpus-inheritance/object.cpp |  49 +++++++++++++++++++++++
+ code/wumpus-inheritance/object.h   |  34 ++++++++++++++++
+ code/wumpus-inheritance/pit.cpp    |   7 ++++
+ code/wumpus-inheritance/pit.h      |  19 +++++++++
+ update-web.log                     |  23 +++++++++++
+ 10 files changed, 279 insertions(+)
+ create mode 100644 code/wumpus-inheritance/Makefile
+ create mode 100644 code/wumpus-inheritance/gold.cpp
+ create mode 100644 code/wumpus-inheritance/gold.h
+ create mode 100755 code/wumpus-inheritance/main
+ create mode 100644 code/wumpus-inheritance/main.cpp
+ create mode 100644 code/wumpus-inheritance/object.cpp
+ create mode 100644 code/wumpus-inheritance/object.h
+ create mode 100644 code/wumpus-inheritance/pit.cpp
+ create mode 100644 code/wumpus-inheritance/pit.h
+( cd ../dsu-cs-3005-cplusplus; make install-examples )
+make[1]: Entering directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+rm -f web/examples.examples
+ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
+make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+Tue Oct 31 10:00:01 MDT 2017
+git add -A .
