@@ -13,11 +13,11 @@ int Object::getY( ) const {
   return mY;
 }
 
-int Object::getDisplayChar( ) const {
+char Object::getDisplayChar( ) const {
   return mDisplayChar;
 }
 
-int Object::getHintChar( ) const {
+char Object::getHintChar( ) const {
   return mHintChar;
 }
 

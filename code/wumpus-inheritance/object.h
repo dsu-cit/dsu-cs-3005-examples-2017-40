@@ -7,8 +7,8 @@ public:
   Object( int x, int y, char dc, char hc );
   int getX( ) const;
   int getY( ) const;
-  int getDisplayChar( ) const;
-  int getHintChar( ) const;
+  char getDisplayChar( ) const;
+  char getHintChar( ) const;
   
   virtual bool showAt( int x, int y ) const;
   virtual bool hintAt( int x, int y ) const;

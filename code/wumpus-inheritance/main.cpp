@@ -1,4 +1,5 @@
 #include <iostream>
+#include <sstream>
 #include <vector>
 #include "object.h"
 #include "gold.h"
@@ -45,28 +46,45 @@ void pit_test( ) {
   std::cout << "hintAt(" << x << "," << y << "): " << g.hintAt( x, y ) << std::endl;
 }
 
+
+std::string cell_string( const std::vector< Object* >& objects, int x, int y ) {
+
+  std::stringstream sout;
+  size_t i;
+
+  for( i = 0 ; i < objects.size( ) ; i++ ) {
+    if( objects[ i ]->showAt( x, y ) ) {
+      sout << objects[ i ]->getDisplayChar( );
+    }
+    if( objects[ i ]->hintAt( x, y ) ) {
+      sout << objects[ i ]->getHintChar( );
+    }
+  }
+  while( sout.str( ).size( ) < 6 ) {
+    sout << " ";
+  }
+  return sout.str( );
+}
+
+
 void polymorphism_test( ) {
-  Pit p( 2, 3 );
+  Pit p( 2, 3 ), q( 0, 3 ), r( 3, 1 );
   Gold g( 2, 3 );
 
   std::vector< Object* > objects;
   objects.push_back( &p );
+  objects.push_back( &q );
+  objects.push_back( &r );
   objects.push_back( &g );
-  size_t i;
-  int x = 2, y = 3;
+  int x, y;
+  std::cout << "+------+------+------+------+" << std::endl;
   for( y = 0 ; y < 4 ; y++ ) {
+    std::string s = "|";
     for( x = 0 ; x < 4; x++ ) {
-      std::cout << x << "," << y << ": ";
-      for( i = 0 ; i < objects.size( ) ; i++ ) {
-        if( objects[ i ]->showAt( x, y ) ) {
-          std::cout << objects[ i ]->getDisplayChar( );
-        }
-        if( objects[ i ]->hintAt( x, y ) ) {
-          std::cout << objects[ i ]->getHintChar( );
-        }
-      }
-      std::cout << std::endl;
+      s += cell_string( objects, x, y ) + "|";
     }
+    std::cout << s << std::endl;
+    std::cout << "+------+------+------+------+" << std::endl;
   }
 }
 
