@@ -18,7 +18,6 @@ MyContainer<T,S>::MyContainer( T x, S y )
   : mX( x ), mY( y ) {
   // empty
 }
-
 template< class T, class S >
 T MyContainer<T,S>::getX( ) const {
   return mX;
