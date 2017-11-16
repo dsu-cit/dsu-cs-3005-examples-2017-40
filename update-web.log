@@ -1461,3 +1461,53 @@ ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
 make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
 Wed Nov 15 10:00:01 MST 2017
 git add -A .
+x=`git status | grep 'nothing to commit' | wc -l`; \
+if [ "$x" = "0" ]; then \
+	git commit -m 'automated daily commit'; \
+fi;
+[master 482c326] automated daily commit
+ 10 files changed, 132 insertions(+)
+ create mode 100644 code/critter/foo.cpp
+ create mode 100644 code/memory_test/Makefile
+ create mode 100644 code/memory_test/main.cpp
+ create mode 100755 code/memory_test/memory_test
+ create mode 100644 code/read_std_cin/Makefile
+ create mode 100644 code/read_std_cin/graph005.txt
+ create mode 100755 code/read_std_cin/main
+ create mode 100644 code/read_std_cin/main.cpp
+ create mode 100755 code/read_std_cin/memory_test
+git push;
+To git@github.com:dsu-cit/dsu-cs-3005-examples-2017-40.git
+   5288995..482c326  master -> master
+ssh cgl@helios "cd courses/dsu-cs-3005-examples-2017-40/; git pull; make install-on-helios"
+From github.com:dsu-cit/dsu-cs-3005-examples-2017-40
+   5288995..482c326  master     -> origin/master
+Updating 5288995..482c326
+Fast-forward
+ code/critter/foo.cpp           |  12 ++++++++++++
+ code/memory_test/Makefile      |  16 ++++++++++++++++
+ code/memory_test/main.cpp      |  25 +++++++++++++++++++++++++
+ code/memory_test/memory_test   | Bin 0 -> 27920 bytes
+ code/read_std_cin/Makefile     |  16 ++++++++++++++++
+ code/read_std_cin/graph005.txt |  21 +++++++++++++++++++++
+ code/read_std_cin/main         | Bin 0 -> 9592 bytes
+ code/read_std_cin/main.cpp     |  19 +++++++++++++++++++
+ code/read_std_cin/memory_test  | Bin 0 -> 28360 bytes
+ update-web.log                 |  23 +++++++++++++++++++++++
+ 10 files changed, 132 insertions(+)
+ create mode 100644 code/critter/foo.cpp
+ create mode 100644 code/memory_test/Makefile
+ create mode 100644 code/memory_test/main.cpp
+ create mode 100755 code/memory_test/memory_test
+ create mode 100644 code/read_std_cin/Makefile
+ create mode 100644 code/read_std_cin/graph005.txt
+ create mode 100755 code/read_std_cin/main
+ create mode 100644 code/read_std_cin/main.cpp
+ create mode 100755 code/read_std_cin/memory_test
+( cd ../dsu-cs-3005-cplusplus; make install-examples )
+make[1]: Entering directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+rm -f web/examples.examples
+ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
+make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+Thu Nov 16 10:00:01 MST 2017
+git add -A .
