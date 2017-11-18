@@ -1534,3 +1534,41 @@ ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
 make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
 Fri Nov 17 10:00:02 MST 2017
 git add -A .
+x=`git status | grep 'nothing to commit' | wc -l`; \
+if [ "$x" = "0" ]; then \
+	git commit -m 'automated daily commit'; \
+fi;
+[master 32f6290] automated daily commit
+ 6 files changed, 107 insertions(+)
+ create mode 100644 code/preprocessor/.gitignore
+ create mode 100644 code/preprocessor/Makefile
+ create mode 100644 code/preprocessor/funcs.cpp
+ create mode 100644 code/preprocessor/funcs.h
+ create mode 100644 code/preprocessor/main.cpp
+git push;
+To git@github.com:dsu-cit/dsu-cs-3005-examples-2017-40.git
+   184d33a..32f6290  master -> master
+ssh cgl@helios "cd courses/dsu-cs-3005-examples-2017-40/; git pull; make install-on-helios"
+From github.com:dsu-cit/dsu-cs-3005-examples-2017-40
+   184d33a..32f6290  master     -> origin/master
+Updating 184d33a..32f6290
+Fast-forward
+ code/preprocessor/.gitignore |  1 +
+ code/preprocessor/Makefile   | 22 ++++++++++++++++++++++
+ code/preprocessor/funcs.cpp  | 16 ++++++++++++++++
+ code/preprocessor/funcs.h    | 23 +++++++++++++++++++++++
+ code/preprocessor/main.cpp   | 22 ++++++++++++++++++++++
+ update-web.log               | 23 +++++++++++++++++++++++
+ 6 files changed, 107 insertions(+)
+ create mode 100644 code/preprocessor/.gitignore
+ create mode 100644 code/preprocessor/Makefile
+ create mode 100644 code/preprocessor/funcs.cpp
+ create mode 100644 code/preprocessor/funcs.h
+ create mode 100644 code/preprocessor/main.cpp
+( cd ../dsu-cs-3005-cplusplus; make install-examples )
+make[1]: Entering directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+rm -f web/examples.examples
+ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
+make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+Sat Nov 18 10:00:01 MST 2017
+git add -A .
