@@ -1,9 +1,12 @@
-CXXFLAGS := -std=c++11 -Wall -Werror
+CXXFLAGS := -std=c++11 -Wall -Werror -g
 
-all: main
+all: main main2
 
 main: main.cpp
 	g++ $(CXXFLAGS) -o main main.cpp
+
+main2: main2.cpp
+	g++ $(CXXFLAGS) -o main2 main2.cpp
 
 run: main
 	./main
