@@ -1779,3 +1779,42 @@ ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
 make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
 Mon Nov 27 10:00:01 MST 2017
 git add -A .
+x=`git status | grep 'nothing to commit' | wc -l`; \
+if [ "$x" = "0" ]; then \
+	git commit -m 'automated daily commit'; \
+fi;
+[master 859ef8b] automated daily commit
+ 7 files changed, 100 insertions(+)
+ create mode 100644 code/debugging/.gitignore
+ create mode 100644 code/debugging/Makefile
+ create mode 100644 code/debugging/main.cpp
+ create mode 100644 code/debugging/main2.cpp
+ create mode 100644 code/memory_test/.gitignore
+git push;
+To git@github.com:dsu-cit/dsu-cs-3005-examples-2017-40.git
+   5fc240d..859ef8b  master -> master
+ssh cgl@helios "cd courses/dsu-cs-3005-examples-2017-40/; git pull; make install-on-helios"
+From github.com:dsu-cit/dsu-cs-3005-examples-2017-40
+   5fc240d..859ef8b  master     -> origin/master
+Updating 5fc240d..859ef8b
+Fast-forward
+ code/debugging/.gitignore   |  3 +++
+ code/debugging/Makefile     | 21 +++++++++++++++++++++
+ code/debugging/main.cpp     | 25 +++++++++++++++++++++++++
+ code/debugging/main2.cpp    | 24 ++++++++++++++++++++++++
+ code/memory_test/.gitignore |  2 ++
+ code/memory_test/Makefile   |  2 ++
+ update-web.log              | 23 +++++++++++++++++++++++
+ 7 files changed, 100 insertions(+)
+ create mode 100644 code/debugging/.gitignore
+ create mode 100644 code/debugging/Makefile
+ create mode 100644 code/debugging/main.cpp
+ create mode 100644 code/debugging/main2.cpp
+ create mode 100644 code/memory_test/.gitignore
+( cd ../dsu-cs-3005-cplusplus; make install-examples )
+make[1]: Entering directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+rm -f web/examples.examples
+ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
+make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+Tue Nov 28 10:00:01 MST 2017
+git add -A .
