@@ -754,3 +754,1067 @@ ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
 make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
 Fri Oct 20 10:00:01 MDT 2017
 git add -A .
+x=`git status | grep 'nothing to commit' | wc -l`; \
+if [ "$x" = "0" ]; then \
+	git commit -m 'automated daily commit'; \
+fi;
+[master 83d5bee] automated daily commit
+ 8 files changed, 169 insertions(+)
+ create mode 100644 code/robot/.gitignore
+ create mode 100644 code/robot/Makefile
+ create mode 100644 code/robot/Robot.cpp
+ create mode 100644 code/robot/Robot.h
+ create mode 100644 code/robot/VacuumRobot.cpp
+ create mode 100644 code/robot/VacuumRobot.h
+ create mode 100644 code/robot/main.cpp
+git push;
+To git@github.com:dsu-cit/dsu-cs-3005-examples-2017-40.git
+   fa05ba9..83d5bee  master -> master
+ssh cgl@helios "cd courses/dsu-cs-3005-examples-2017-40/; git pull; make install-on-helios"
+From github.com:dsu-cit/dsu-cs-3005-examples-2017-40
+   fa05ba9..83d5bee  master     -> origin/master
+Updating fa05ba9..83d5bee
+Fast-forward
+ code/robot/.gitignore      |  1 +
+ code/robot/Makefile        | 12 ++++++++++++
+ code/robot/Robot.cpp       | 36 ++++++++++++++++++++++++++++++++++++
+ code/robot/Robot.h         | 27 +++++++++++++++++++++++++++
+ code/robot/VacuumRobot.cpp | 16 ++++++++++++++++
+ code/robot/VacuumRobot.h   | 27 +++++++++++++++++++++++++++
+ code/robot/main.cpp        | 27 +++++++++++++++++++++++++++
+ update-web.log             | 23 +++++++++++++++++++++++
+ 8 files changed, 169 insertions(+)
+ create mode 100644 code/robot/.gitignore
+ create mode 100644 code/robot/Makefile
+ create mode 100644 code/robot/Robot.cpp
+ create mode 100644 code/robot/Robot.h
+ create mode 100644 code/robot/VacuumRobot.cpp
+ create mode 100644 code/robot/VacuumRobot.h
+ create mode 100644 code/robot/main.cpp
+( cd ../dsu-cs-3005-cplusplus; make install-examples )
+make[1]: Entering directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+rm -f web/examples.examples
+ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
+make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+Sat Oct 21 10:00:01 MDT 2017
+git add -A .
+x=`git status | grep 'nothing to commit' | wc -l`; \
+if [ "$x" = "0" ]; then \
+	git commit -m 'automated daily commit'; \
+fi;
+[master 127e88c] automated daily commit
+ 1 file changed, 44 insertions(+)
+git push;
+To git@github.com:dsu-cit/dsu-cs-3005-examples-2017-40.git
+   83d5bee..127e88c  master -> master
+ssh cgl@helios "cd courses/dsu-cs-3005-examples-2017-40/; git pull; make install-on-helios"
+From github.com:dsu-cit/dsu-cs-3005-examples-2017-40
+   83d5bee..127e88c  master     -> origin/master
+Updating 83d5bee..127e88c
+Fast-forward
+ update-web.log | 44 ++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 44 insertions(+)
+( cd ../dsu-cs-3005-cplusplus; make install-examples )
+make[1]: Entering directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+rm -f web/examples.examples
+ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
+make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+Sun Oct 22 10:00:01 MDT 2017
+git add -A .
+x=`git status | grep 'nothing to commit' | wc -l`; \
+if [ "$x" = "0" ]; then \
+	git commit -m 'automated daily commit'; \
+fi;
+[master 15a3bfe] automated daily commit
+ 1 file changed, 23 insertions(+)
+git push;
+To git@github.com:dsu-cit/dsu-cs-3005-examples-2017-40.git
+   127e88c..15a3bfe  master -> master
+ssh cgl@helios "cd courses/dsu-cs-3005-examples-2017-40/; git pull; make install-on-helios"
+From github.com:dsu-cit/dsu-cs-3005-examples-2017-40
+   127e88c..15a3bfe  master     -> origin/master
+Updating 127e88c..15a3bfe
+Fast-forward
+ update-web.log | 23 +++++++++++++++++++++++
+ 1 file changed, 23 insertions(+)
+( cd ../dsu-cs-3005-cplusplus; make install-examples )
+make[1]: Entering directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+rm -f web/examples.examples
+ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
+make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+Mon Oct 23 10:00:01 MDT 2017
+git add -A .
+x=`git status | grep 'nothing to commit' | wc -l`; \
+if [ "$x" = "0" ]; then \
+	git commit -m 'automated daily commit'; \
+fi;
+[master c1b9c7e] automated daily commit
+ 1 file changed, 23 insertions(+)
+git push;
+To git@github.com:dsu-cit/dsu-cs-3005-examples-2017-40.git
+   15a3bfe..c1b9c7e  master -> master
+ssh cgl@helios "cd courses/dsu-cs-3005-examples-2017-40/; git pull; make install-on-helios"
+From github.com:dsu-cit/dsu-cs-3005-examples-2017-40
+   15a3bfe..c1b9c7e  master     -> origin/master
+Updating 15a3bfe..c1b9c7e
+Fast-forward
+ update-web.log | 23 +++++++++++++++++++++++
+ 1 file changed, 23 insertions(+)
+( cd ../dsu-cs-3005-cplusplus; make install-examples )
+make[1]: Entering directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+rm -f web/examples.examples
+ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
+make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+Tue Oct 24 10:00:01 MDT 2017
+git add -A .
+x=`git status | grep 'nothing to commit' | wc -l`; \
+if [ "$x" = "0" ]; then \
+	git commit -m 'automated daily commit'; \
+fi;
+[master 68f583d] automated daily commit
+ 1 file changed, 23 insertions(+)
+git push;
+To git@github.com:dsu-cit/dsu-cs-3005-examples-2017-40.git
+   c1b9c7e..68f583d  master -> master
+ssh cgl@helios "cd courses/dsu-cs-3005-examples-2017-40/; git pull; make install-on-helios"
+From github.com:dsu-cit/dsu-cs-3005-examples-2017-40
+   c1b9c7e..68f583d  master     -> origin/master
+Updating c1b9c7e..68f583d
+Fast-forward
+ update-web.log | 23 +++++++++++++++++++++++
+ 1 file changed, 23 insertions(+)
+( cd ../dsu-cs-3005-cplusplus; make install-examples )
+make[1]: Entering directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+rm -f web/examples.examples
+ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
+make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+Wed Oct 25 10:00:01 MDT 2017
+git add -A .
+x=`git status | grep 'nothing to commit' | wc -l`; \
+if [ "$x" = "0" ]; then \
+	git commit -m 'automated daily commit'; \
+fi;
+[master b77be80] automated daily commit
+ 12 files changed, 364 insertions(+)
+ create mode 100644 code/y17m10d25p01-opengl-example-visual-studio.zip
+ create mode 100644 code/y17m10d25p02-opengl-example-unix.tgz
+ create mode 100644 code/y17m10d25p02-opengl-example-unix/Makefile
+ create mode 100644 code/y17m10d25p02-opengl-example-unix/README.txt
+ create mode 100644 code/y17m10d25p02-opengl-example-unix/app.cpp
+ create mode 100644 code/y17m10d25p02-opengl-example-unix/gl_draw.cpp
+ create mode 100644 code/y17m10d25p02-opengl-example-unix/glut_app.h
+ create mode 100644 code/y17m10d25p02-opengl-example-unix/glut_callback.cpp
+ create mode 100755 code/y17m10d25p02-opengl-example-unix/glut_main
+ create mode 100644 code/y17m10d25p02-opengl-example-unix/glut_main.cpp
+ create mode 100644 code/y17m10d25p03-opengl-example-x-code.tgz
+git push;
+To git@github.com:dsu-cit/dsu-cs-3005-examples-2017-40.git
+   68f583d..b77be80  master -> master
+ssh cgl@helios "cd courses/dsu-cs-3005-examples-2017-40/; git pull; make install-on-helios"
+From github.com:dsu-cit/dsu-cs-3005-examples-2017-40
+   68f583d..b77be80  master     -> origin/master
+Updating 68f583d..b77be80
+Fast-forward
+ code/y17m10d25p01-opengl-example-visual-studio.zip | Bin 0 -> 89538 bytes
+ code/y17m10d25p02-opengl-example-unix.tgz          | Bin 0 -> 9153 bytes
+ code/y17m10d25p02-opengl-example-unix/Makefile     |  37 +++++++
+ code/y17m10d25p02-opengl-example-unix/README.txt   |  45 +++++++++
+ code/y17m10d25p02-opengl-example-unix/app.cpp      |   7 ++
+ code/y17m10d25p02-opengl-example-unix/gl_draw.cpp  |  57 +++++++++++
+ code/y17m10d25p02-opengl-example-unix/glut_app.h   |  50 ++++++++++
+ .../glut_callback.cpp                              | 107 +++++++++++++++++++++
+ code/y17m10d25p02-opengl-example-unix/glut_main    | Bin 0 -> 19696 bytes
+ .../y17m10d25p02-opengl-example-unix/glut_main.cpp |  38 ++++++++
+ code/y17m10d25p03-opengl-example-x-code.tgz        | Bin 0 -> 14259 bytes
+ update-web.log                                     |  23 +++++
+ 12 files changed, 364 insertions(+)
+ create mode 100644 code/y17m10d25p01-opengl-example-visual-studio.zip
+ create mode 100644 code/y17m10d25p02-opengl-example-unix.tgz
+ create mode 100644 code/y17m10d25p02-opengl-example-unix/Makefile
+ create mode 100644 code/y17m10d25p02-opengl-example-unix/README.txt
+ create mode 100644 code/y17m10d25p02-opengl-example-unix/app.cpp
+ create mode 100644 code/y17m10d25p02-opengl-example-unix/gl_draw.cpp
+ create mode 100644 code/y17m10d25p02-opengl-example-unix/glut_app.h
+ create mode 100644 code/y17m10d25p02-opengl-example-unix/glut_callback.cpp
+ create mode 100755 code/y17m10d25p02-opengl-example-unix/glut_main
+ create mode 100644 code/y17m10d25p02-opengl-example-unix/glut_main.cpp
+ create mode 100644 code/y17m10d25p03-opengl-example-x-code.tgz
+( cd ../dsu-cs-3005-cplusplus; make install-examples )
+make[1]: Entering directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+rm -f web/examples.examples
+ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
+make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+Thu Oct 26 10:00:01 MDT 2017
+git add -A .
+x=`git status | grep 'nothing to commit' | wc -l`; \
+if [ "$x" = "0" ]; then \
+	git commit -m 'automated daily commit'; \
+fi;
+[master db2de85] automated daily commit
+ 1 file changed, 56 insertions(+)
+git push;
+To git@github.com:dsu-cit/dsu-cs-3005-examples-2017-40.git
+   b77be80..db2de85  master -> master
+ssh cgl@helios "cd courses/dsu-cs-3005-examples-2017-40/; git pull; make install-on-helios"
+From github.com:dsu-cit/dsu-cs-3005-examples-2017-40
+   b77be80..db2de85  master     -> origin/master
+Updating b77be80..db2de85
+Fast-forward
+ update-web.log | 56 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 56 insertions(+)
+( cd ../dsu-cs-3005-cplusplus; make install-examples )
+make[1]: Entering directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+rm -f web/examples.examples
+ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
+make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+Fri Oct 27 10:00:01 MDT 2017
+git add -A .
+x=`git status | grep 'nothing to commit' | wc -l`; \
+if [ "$x" = "0" ]; then \
+	git commit -m 'automated daily commit'; \
+fi;
+[master 2ed9c62] automated daily commit
+ 1 file changed, 23 insertions(+)
+git push;
+To git@github.com:dsu-cit/dsu-cs-3005-examples-2017-40.git
+   db2de85..2ed9c62  master -> master
+ssh cgl@helios "cd courses/dsu-cs-3005-examples-2017-40/; git pull; make install-on-helios"
+From github.com:dsu-cit/dsu-cs-3005-examples-2017-40
+   db2de85..2ed9c62  master     -> origin/master
+Updating db2de85..2ed9c62
+Fast-forward
+ update-web.log | 23 +++++++++++++++++++++++
+ 1 file changed, 23 insertions(+)
+( cd ../dsu-cs-3005-cplusplus; make install-examples )
+make[1]: Entering directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+rm -f web/examples.examples
+ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
+make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+Sat Oct 28 10:00:01 MDT 2017
+git add -A .
+x=`git status | grep 'nothing to commit' | wc -l`; \
+if [ "$x" = "0" ]; then \
+	git commit -m 'automated daily commit'; \
+fi;
+[master 444775a] automated daily commit
+ 1 file changed, 23 insertions(+)
+git push;
+To git@github.com:dsu-cit/dsu-cs-3005-examples-2017-40.git
+   2ed9c62..444775a  master -> master
+ssh cgl@helios "cd courses/dsu-cs-3005-examples-2017-40/; git pull; make install-on-helios"
+From github.com:dsu-cit/dsu-cs-3005-examples-2017-40
+   2ed9c62..444775a  master     -> origin/master
+Updating 2ed9c62..444775a
+Fast-forward
+ update-web.log | 23 +++++++++++++++++++++++
+ 1 file changed, 23 insertions(+)
+( cd ../dsu-cs-3005-cplusplus; make install-examples )
+make[1]: Entering directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+rm -f web/examples.examples
+ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
+make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+Sun Oct 29 10:00:01 MDT 2017
+git add -A .
+x=`git status | grep 'nothing to commit' | wc -l`; \
+if [ "$x" = "0" ]; then \
+	git commit -m 'automated daily commit'; \
+fi;
+[master 1397771] automated daily commit
+ 1 file changed, 23 insertions(+)
+git push;
+To git@github.com:dsu-cit/dsu-cs-3005-examples-2017-40.git
+   444775a..1397771  master -> master
+ssh cgl@helios "cd courses/dsu-cs-3005-examples-2017-40/; git pull; make install-on-helios"
+From github.com:dsu-cit/dsu-cs-3005-examples-2017-40
+   444775a..1397771  master     -> origin/master
+Updating 444775a..1397771
+Fast-forward
+ update-web.log | 23 +++++++++++++++++++++++
+ 1 file changed, 23 insertions(+)
+( cd ../dsu-cs-3005-cplusplus; make install-examples )
+make[1]: Entering directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+rm -f web/examples.examples
+ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
+make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+Mon Oct 30 10:00:01 MDT 2017
+git add -A .
+x=`git status | grep 'nothing to commit' | wc -l`; \
+if [ "$x" = "0" ]; then \
+	git commit -m 'automated daily commit'; \
+fi;
+[master bf37d9d] automated daily commit
+ 10 files changed, 279 insertions(+)
+ create mode 100644 code/wumpus-inheritance/Makefile
+ create mode 100644 code/wumpus-inheritance/gold.cpp
+ create mode 100644 code/wumpus-inheritance/gold.h
+ create mode 100755 code/wumpus-inheritance/main
+ create mode 100644 code/wumpus-inheritance/main.cpp
+ create mode 100644 code/wumpus-inheritance/object.cpp
+ create mode 100644 code/wumpus-inheritance/object.h
+ create mode 100644 code/wumpus-inheritance/pit.cpp
+ create mode 100644 code/wumpus-inheritance/pit.h
+git push;
+To git@github.com:dsu-cit/dsu-cs-3005-examples-2017-40.git
+   1397771..bf37d9d  master -> master
+ssh cgl@helios "cd courses/dsu-cs-3005-examples-2017-40/; git pull; make install-on-helios"
+From github.com:dsu-cit/dsu-cs-3005-examples-2017-40
+   1397771..bf37d9d  master     -> origin/master
+Updating 1397771..bf37d9d
+Fast-forward
+ code/wumpus-inheritance/Makefile   |   9 +++++
+ code/wumpus-inheritance/gold.cpp   |  31 ++++++++++++++
+ code/wumpus-inheritance/gold.h     |  27 +++++++++++++
+ code/wumpus-inheritance/main       | Bin 0 -> 29200 bytes
+ code/wumpus-inheritance/main.cpp   |  80 +++++++++++++++++++++++++++++++++++++
+ code/wumpus-inheritance/object.cpp |  49 +++++++++++++++++++++++
+ code/wumpus-inheritance/object.h   |  34 ++++++++++++++++
+ code/wumpus-inheritance/pit.cpp    |   7 ++++
+ code/wumpus-inheritance/pit.h      |  19 +++++++++
+ update-web.log                     |  23 +++++++++++
+ 10 files changed, 279 insertions(+)
+ create mode 100644 code/wumpus-inheritance/Makefile
+ create mode 100644 code/wumpus-inheritance/gold.cpp
+ create mode 100644 code/wumpus-inheritance/gold.h
+ create mode 100755 code/wumpus-inheritance/main
+ create mode 100644 code/wumpus-inheritance/main.cpp
+ create mode 100644 code/wumpus-inheritance/object.cpp
+ create mode 100644 code/wumpus-inheritance/object.h
+ create mode 100644 code/wumpus-inheritance/pit.cpp
+ create mode 100644 code/wumpus-inheritance/pit.h
+( cd ../dsu-cs-3005-cplusplus; make install-examples )
+make[1]: Entering directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+rm -f web/examples.examples
+ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
+make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+Tue Oct 31 10:00:01 MDT 2017
+git add -A .
+x=`git status | grep 'nothing to commit' | wc -l`; \
+if [ "$x" = "0" ]; then \
+	git commit -m 'automated daily commit'; \
+fi;
+[master 5e86ccb] automated daily commit
+ 1 file changed, 50 insertions(+)
+git push;
+To git@github.com:dsu-cit/dsu-cs-3005-examples-2017-40.git
+   bf37d9d..5e86ccb  master -> master
+ssh cgl@helios "cd courses/dsu-cs-3005-examples-2017-40/; git pull; make install-on-helios"
+From github.com:dsu-cit/dsu-cs-3005-examples-2017-40
+   bf37d9d..5e86ccb  master     -> origin/master
+Updating bf37d9d..5e86ccb
+Fast-forward
+ update-web.log | 50 ++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 50 insertions(+)
+( cd ../dsu-cs-3005-cplusplus; make install-examples )
+make[1]: Entering directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+rm -f web/examples.examples
+ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
+make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+Wed Nov  1 10:00:02 MDT 2017
+git add -A .
+x=`git status | grep 'nothing to commit' | wc -l`; \
+if [ "$x" = "0" ]; then \
+	git commit -m 'automated daily commit'; \
+fi;
+[master 5827f0b] automated daily commit
+ 5 files changed, 58 insertions(+), 17 deletions(-)
+ rewrite code/wumpus-inheritance/main (90%)
+git push;
+To git@github.com:dsu-cit/dsu-cs-3005-examples-2017-40.git
+   5e86ccb..5827f0b  master -> master
+ssh cgl@helios "cd courses/dsu-cs-3005-examples-2017-40/; git pull; make install-on-helios"
+From github.com:dsu-cit/dsu-cs-3005-examples-2017-40
+   5e86ccb..5827f0b  master     -> origin/master
+Updating 5e86ccb..5827f0b
+Fast-forward
+ code/wumpus-inheritance/main       | Bin 29200 -> 35032 bytes
+ code/wumpus-inheritance/main.cpp   |  44 ++++++++++++++++++++++++++-----------
+ code/wumpus-inheritance/object.cpp |   4 ++--
+ code/wumpus-inheritance/object.h   |   4 ++--
+ update-web.log                     |  23 +++++++++++++++++++
+ 5 files changed, 58 insertions(+), 17 deletions(-)
+( cd ../dsu-cs-3005-cplusplus; make install-examples )
+make[1]: Entering directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+rm -f web/examples.examples
+ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
+make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+Thu Nov  2 10:00:01 MDT 2017
+git add -A .
+x=`git status | grep 'nothing to commit' | wc -l`; \
+if [ "$x" = "0" ]; then \
+	git commit -m 'automated daily commit'; \
+fi;
+[master 3d887ec] automated daily commit
+ 1 file changed, 28 insertions(+)
+git push;
+To git@github.com:dsu-cit/dsu-cs-3005-examples-2017-40.git
+   5827f0b..3d887ec  master -> master
+ssh cgl@helios "cd courses/dsu-cs-3005-examples-2017-40/; git pull; make install-on-helios"
+From github.com:dsu-cit/dsu-cs-3005-examples-2017-40
+   5827f0b..3d887ec  master     -> origin/master
+Updating 5827f0b..3d887ec
+Fast-forward
+ update-web.log | 28 ++++++++++++++++++++++++++++
+ 1 file changed, 28 insertions(+)
+( cd ../dsu-cs-3005-cplusplus; make install-examples )
+make[1]: Entering directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+rm -f web/examples.examples
+ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
+make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+Fri Nov  3 10:00:01 MDT 2017
+git add -A .
+x=`git status | grep 'nothing to commit' | wc -l`; \
+if [ "$x" = "0" ]; then \
+	git commit -m 'automated daily commit'; \
+fi;
+[master c76ab5e] automated daily commit
+ 1 file changed, 23 insertions(+)
+git push;
+To git@github.com:dsu-cit/dsu-cs-3005-examples-2017-40.git
+   3d887ec..c76ab5e  master -> master
+ssh cgl@helios "cd courses/dsu-cs-3005-examples-2017-40/; git pull; make install-on-helios"
+From github.com:dsu-cit/dsu-cs-3005-examples-2017-40
+   3d887ec..c76ab5e  master     -> origin/master
+Updating 3d887ec..c76ab5e
+Fast-forward
+ update-web.log | 23 +++++++++++++++++++++++
+ 1 file changed, 23 insertions(+)
+( cd ../dsu-cs-3005-cplusplus; make install-examples )
+make[1]: Entering directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+rm -f web/examples.examples
+ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
+make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+Sat Nov  4 10:00:01 MDT 2017
+git add -A .
+x=`git status | grep 'nothing to commit' | wc -l`; \
+if [ "$x" = "0" ]; then \
+	git commit -m 'automated daily commit'; \
+fi;
+[master 25a6301] automated daily commit
+ 1 file changed, 23 insertions(+)
+git push;
+To git@github.com:dsu-cit/dsu-cs-3005-examples-2017-40.git
+   c76ab5e..25a6301  master -> master
+ssh cgl@helios "cd courses/dsu-cs-3005-examples-2017-40/; git pull; make install-on-helios"
+From github.com:dsu-cit/dsu-cs-3005-examples-2017-40
+   c76ab5e..25a6301  master     -> origin/master
+Updating c76ab5e..25a6301
+Fast-forward
+ update-web.log | 23 +++++++++++++++++++++++
+ 1 file changed, 23 insertions(+)
+( cd ../dsu-cs-3005-cplusplus; make install-examples )
+make[1]: Entering directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+rm -f web/examples.examples
+ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
+make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+Sun Nov  5 10:00:01 MST 2017
+git add -A .
+x=`git status | grep 'nothing to commit' | wc -l`; \
+if [ "$x" = "0" ]; then \
+	git commit -m 'automated daily commit'; \
+fi;
+[master d40b1b5] automated daily commit
+ 1 file changed, 23 insertions(+)
+git push;
+To git@github.com:dsu-cit/dsu-cs-3005-examples-2017-40.git
+   25a6301..d40b1b5  master -> master
+ssh cgl@helios "cd courses/dsu-cs-3005-examples-2017-40/; git pull; make install-on-helios"
+From github.com:dsu-cit/dsu-cs-3005-examples-2017-40
+   25a6301..d40b1b5  master     -> origin/master
+Updating 25a6301..d40b1b5
+Fast-forward
+ update-web.log | 23 +++++++++++++++++++++++
+ 1 file changed, 23 insertions(+)
+( cd ../dsu-cs-3005-cplusplus; make install-examples )
+make[1]: Entering directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+rm -f web/examples.examples
+ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
+make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+Mon Nov  6 10:00:01 MST 2017
+git add -A .
+x=`git status | grep 'nothing to commit' | wc -l`; \
+if [ "$x" = "0" ]; then \
+	git commit -m 'automated daily commit'; \
+fi;
+[master aa3b887] automated daily commit
+ 6 files changed, 206 insertions(+)
+ create mode 100644 code/template/Makefile
+ create mode 100755 code/template/template_class
+ create mode 100644 code/template/template_class.cpp
+ create mode 100755 code/template/template_main
+ create mode 100644 code/template/template_main.cpp
+git push;
+To git@github.com:dsu-cit/dsu-cs-3005-examples-2017-40.git
+   d40b1b5..aa3b887  master -> master
+ssh cgl@helios "cd courses/dsu-cs-3005-examples-2017-40/; git pull; make install-on-helios"
+From github.com:dsu-cit/dsu-cs-3005-examples-2017-40
+   d40b1b5..aa3b887  master     -> origin/master
+Updating d40b1b5..aa3b887
+Fast-forward
+ code/template/Makefile           |   7 +++
+ code/template/template_class     | Bin 0 -> 29064 bytes
+ code/template/template_class.cpp | 118 +++++++++++++++++++++++++++++++++++++++
+ code/template/template_main      | Bin 0 -> 13640 bytes
+ code/template/template_main.cpp  |  58 +++++++++++++++++++
+ update-web.log                   |  23 ++++++++
+ 6 files changed, 206 insertions(+)
+ create mode 100644 code/template/Makefile
+ create mode 100755 code/template/template_class
+ create mode 100644 code/template/template_class.cpp
+ create mode 100755 code/template/template_main
+ create mode 100644 code/template/template_main.cpp
+( cd ../dsu-cs-3005-cplusplus; make install-examples )
+make[1]: Entering directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+rm -f web/examples.examples
+ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
+make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+Tue Nov  7 10:00:02 MST 2017
+git add -A .
+x=`git status | grep 'nothing to commit' | wc -l`; \
+if [ "$x" = "0" ]; then \
+	git commit -m 'automated daily commit'; \
+fi;
+[master f822b01] automated daily commit
+ 1 file changed, 38 insertions(+)
+git push;
+To git@github.com:dsu-cit/dsu-cs-3005-examples-2017-40.git
+   aa3b887..f822b01  master -> master
+ssh cgl@helios "cd courses/dsu-cs-3005-examples-2017-40/; git pull; make install-on-helios"
+From github.com:dsu-cit/dsu-cs-3005-examples-2017-40
+   aa3b887..f822b01  master     -> origin/master
+Updating aa3b887..f822b01
+Fast-forward
+ update-web.log | 38 ++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 38 insertions(+)
+( cd ../dsu-cs-3005-cplusplus; make install-examples )
+make[1]: Entering directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+rm -f web/examples.examples
+ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
+make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+Wed Nov  8 10:00:01 MST 2017
+git add -A .
+x=`git status | grep 'nothing to commit' | wc -l`; \
+if [ "$x" = "0" ]; then \
+	git commit -m 'automated daily commit'; \
+fi;
+[master 1af4ef5] automated daily commit
+ 5 files changed, 111 insertions(+), 1 deletion(-)
+ create mode 100755 code/stl/containers
+ create mode 100644 code/stl/containers.cpp
+git push;
+To git@github.com:dsu-cit/dsu-cs-3005-examples-2017-40.git
+   f822b01..1af4ef5  master -> master
+ssh cgl@helios "cd courses/dsu-cs-3005-examples-2017-40/; git pull; make install-on-helios"
+From github.com:dsu-cit/dsu-cs-3005-examples-2017-40
+   f822b01..1af4ef5  master     -> origin/master
+Updating f822b01..1af4ef5
+Fast-forward
+ code/stl/Makefile                |   3 ++
+ code/stl/containers              | Bin 0 -> 73760 bytes
+ code/stl/containers.cpp          |  85 +++++++++++++++++++++++++++++++++++++++
+ code/template/template_class.cpp |   1 -
+ update-web.log                   |  23 +++++++++++
+ 5 files changed, 111 insertions(+), 1 deletion(-)
+ create mode 100755 code/stl/containers
+ create mode 100644 code/stl/containers.cpp
+( cd ../dsu-cs-3005-cplusplus; make install-examples )
+make[1]: Entering directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+rm -f web/examples.examples
+ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
+make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+Thu Nov  9 10:00:01 MST 2017
+git add -A .
+x=`git status | grep 'nothing to commit' | wc -l`; \
+if [ "$x" = "0" ]; then \
+	git commit -m 'automated daily commit'; \
+fi;
+[master 2052b9a] automated daily commit
+ 1 file changed, 31 insertions(+)
+git push;
+To git@github.com:dsu-cit/dsu-cs-3005-examples-2017-40.git
+   1af4ef5..2052b9a  master -> master
+ssh cgl@helios "cd courses/dsu-cs-3005-examples-2017-40/; git pull; make install-on-helios"
+From github.com:dsu-cit/dsu-cs-3005-examples-2017-40
+   1af4ef5..2052b9a  master     -> origin/master
+Updating 1af4ef5..2052b9a
+Fast-forward
+ update-web.log | 31 +++++++++++++++++++++++++++++++
+ 1 file changed, 31 insertions(+)
+( cd ../dsu-cs-3005-cplusplus; make install-examples )
+make[1]: Entering directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+rm -f web/examples.examples
+ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
+make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+Fri Nov 10 10:00:01 MST 2017
+git add -A .
+x=`git status | grep 'nothing to commit' | wc -l`; \
+if [ "$x" = "0" ]; then \
+	git commit -m 'automated daily commit'; \
+fi;
+[master d9a9ebb] automated daily commit
+ 1 file changed, 23 insertions(+)
+git push;
+To git@github.com:dsu-cit/dsu-cs-3005-examples-2017-40.git
+   2052b9a..d9a9ebb  master -> master
+ssh cgl@helios "cd courses/dsu-cs-3005-examples-2017-40/; git pull; make install-on-helios"
+From github.com:dsu-cit/dsu-cs-3005-examples-2017-40
+   2052b9a..d9a9ebb  master     -> origin/master
+Updating 2052b9a..d9a9ebb
+Fast-forward
+ update-web.log | 23 +++++++++++++++++++++++
+ 1 file changed, 23 insertions(+)
+( cd ../dsu-cs-3005-cplusplus; make install-examples )
+make[1]: Entering directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+rm -f web/examples.examples
+ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
+make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+Sat Nov 11 10:00:01 MST 2017
+git add -A .
+x=`git status | grep 'nothing to commit' | wc -l`; \
+if [ "$x" = "0" ]; then \
+	git commit -m 'automated daily commit'; \
+fi;
+[master 3f7145c] automated daily commit
+ 1 file changed, 23 insertions(+)
+git push;
+To git@github.com:dsu-cit/dsu-cs-3005-examples-2017-40.git
+   d9a9ebb..3f7145c  master -> master
+ssh cgl@helios "cd courses/dsu-cs-3005-examples-2017-40/; git pull; make install-on-helios"
+From github.com:dsu-cit/dsu-cs-3005-examples-2017-40
+   d9a9ebb..3f7145c  master     -> origin/master
+Updating d9a9ebb..3f7145c
+Fast-forward
+ update-web.log | 23 +++++++++++++++++++++++
+ 1 file changed, 23 insertions(+)
+( cd ../dsu-cs-3005-cplusplus; make install-examples )
+make[1]: Entering directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+rm -f web/examples.examples
+ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
+make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+Sun Nov 12 10:00:01 MST 2017
+git add -A .
+x=`git status | grep 'nothing to commit' | wc -l`; \
+if [ "$x" = "0" ]; then \
+	git commit -m 'automated daily commit'; \
+fi;
+[master c347c45] automated daily commit
+ 1 file changed, 23 insertions(+)
+git push;
+To git@github.com:dsu-cit/dsu-cs-3005-examples-2017-40.git
+   3f7145c..c347c45  master -> master
+ssh cgl@helios "cd courses/dsu-cs-3005-examples-2017-40/; git pull; make install-on-helios"
+From github.com:dsu-cit/dsu-cs-3005-examples-2017-40
+   3f7145c..c347c45  master     -> origin/master
+Updating 3f7145c..c347c45
+Fast-forward
+ update-web.log | 23 +++++++++++++++++++++++
+ 1 file changed, 23 insertions(+)
+( cd ../dsu-cs-3005-cplusplus; make install-examples )
+make[1]: Entering directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+rm -f web/examples.examples
+ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
+make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+Mon Nov 13 10:00:01 MST 2017
+git add -A .
+x=`git status | grep 'nothing to commit' | wc -l`; \
+if [ "$x" = "0" ]; then \
+	git commit -m 'automated daily commit'; \
+fi;
+[master 0ca2eef] automated daily commit
+ 1 file changed, 23 insertions(+)
+git push;
+To git@github.com:dsu-cit/dsu-cs-3005-examples-2017-40.git
+   c347c45..0ca2eef  master -> master
+ssh cgl@helios "cd courses/dsu-cs-3005-examples-2017-40/; git pull; make install-on-helios"
+From github.com:dsu-cit/dsu-cs-3005-examples-2017-40
+   c347c45..0ca2eef  master     -> origin/master
+Updating c347c45..0ca2eef
+Fast-forward
+ update-web.log | 23 +++++++++++++++++++++++
+ 1 file changed, 23 insertions(+)
+( cd ../dsu-cs-3005-cplusplus; make install-examples )
+make[1]: Entering directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+rm -f web/examples.examples
+ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
+make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+Tue Nov 14 10:00:01 MST 2017
+git add -A .
+x=`git status | grep 'nothing to commit' | wc -l`; \
+if [ "$x" = "0" ]; then \
+	git commit -m 'automated daily commit'; \
+fi;
+[master 5288995] automated daily commit
+ 1 file changed, 23 insertions(+)
+git push;
+To git@github.com:dsu-cit/dsu-cs-3005-examples-2017-40.git
+   0ca2eef..5288995  master -> master
+ssh cgl@helios "cd courses/dsu-cs-3005-examples-2017-40/; git pull; make install-on-helios"
+From github.com:dsu-cit/dsu-cs-3005-examples-2017-40
+   0ca2eef..5288995  master     -> origin/master
+Updating 0ca2eef..5288995
+Fast-forward
+ update-web.log | 23 +++++++++++++++++++++++
+ 1 file changed, 23 insertions(+)
+( cd ../dsu-cs-3005-cplusplus; make install-examples )
+make[1]: Entering directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+rm -f web/examples.examples
+ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
+make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+Wed Nov 15 10:00:01 MST 2017
+git add -A .
+x=`git status | grep 'nothing to commit' | wc -l`; \
+if [ "$x" = "0" ]; then \
+	git commit -m 'automated daily commit'; \
+fi;
+[master 482c326] automated daily commit
+ 10 files changed, 132 insertions(+)
+ create mode 100644 code/critter/foo.cpp
+ create mode 100644 code/memory_test/Makefile
+ create mode 100644 code/memory_test/main.cpp
+ create mode 100755 code/memory_test/memory_test
+ create mode 100644 code/read_std_cin/Makefile
+ create mode 100644 code/read_std_cin/graph005.txt
+ create mode 100755 code/read_std_cin/main
+ create mode 100644 code/read_std_cin/main.cpp
+ create mode 100755 code/read_std_cin/memory_test
+git push;
+To git@github.com:dsu-cit/dsu-cs-3005-examples-2017-40.git
+   5288995..482c326  master -> master
+ssh cgl@helios "cd courses/dsu-cs-3005-examples-2017-40/; git pull; make install-on-helios"
+From github.com:dsu-cit/dsu-cs-3005-examples-2017-40
+   5288995..482c326  master     -> origin/master
+Updating 5288995..482c326
+Fast-forward
+ code/critter/foo.cpp           |  12 ++++++++++++
+ code/memory_test/Makefile      |  16 ++++++++++++++++
+ code/memory_test/main.cpp      |  25 +++++++++++++++++++++++++
+ code/memory_test/memory_test   | Bin 0 -> 27920 bytes
+ code/read_std_cin/Makefile     |  16 ++++++++++++++++
+ code/read_std_cin/graph005.txt |  21 +++++++++++++++++++++
+ code/read_std_cin/main         | Bin 0 -> 9592 bytes
+ code/read_std_cin/main.cpp     |  19 +++++++++++++++++++
+ code/read_std_cin/memory_test  | Bin 0 -> 28360 bytes
+ update-web.log                 |  23 +++++++++++++++++++++++
+ 10 files changed, 132 insertions(+)
+ create mode 100644 code/critter/foo.cpp
+ create mode 100644 code/memory_test/Makefile
+ create mode 100644 code/memory_test/main.cpp
+ create mode 100755 code/memory_test/memory_test
+ create mode 100644 code/read_std_cin/Makefile
+ create mode 100644 code/read_std_cin/graph005.txt
+ create mode 100755 code/read_std_cin/main
+ create mode 100644 code/read_std_cin/main.cpp
+ create mode 100755 code/read_std_cin/memory_test
+( cd ../dsu-cs-3005-cplusplus; make install-examples )
+make[1]: Entering directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+rm -f web/examples.examples
+ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
+make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+Thu Nov 16 10:00:01 MST 2017
+git add -A .
+x=`git status | grep 'nothing to commit' | wc -l`; \
+if [ "$x" = "0" ]; then \
+	git commit -m 'automated daily commit'; \
+fi;
+[master 184d33a] automated daily commit
+ 1 file changed, 50 insertions(+)
+git push;
+To git@github.com:dsu-cit/dsu-cs-3005-examples-2017-40.git
+   482c326..184d33a  master -> master
+ssh cgl@helios "cd courses/dsu-cs-3005-examples-2017-40/; git pull; make install-on-helios"
+From github.com:dsu-cit/dsu-cs-3005-examples-2017-40
+   482c326..184d33a  master     -> origin/master
+Updating 482c326..184d33a
+Fast-forward
+ update-web.log | 50 ++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 50 insertions(+)
+( cd ../dsu-cs-3005-cplusplus; make install-examples )
+make[1]: Entering directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+rm -f web/examples.examples
+ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
+make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+Fri Nov 17 10:00:02 MST 2017
+git add -A .
+x=`git status | grep 'nothing to commit' | wc -l`; \
+if [ "$x" = "0" ]; then \
+	git commit -m 'automated daily commit'; \
+fi;
+[master 32f6290] automated daily commit
+ 6 files changed, 107 insertions(+)
+ create mode 100644 code/preprocessor/.gitignore
+ create mode 100644 code/preprocessor/Makefile
+ create mode 100644 code/preprocessor/funcs.cpp
+ create mode 100644 code/preprocessor/funcs.h
+ create mode 100644 code/preprocessor/main.cpp
+git push;
+To git@github.com:dsu-cit/dsu-cs-3005-examples-2017-40.git
+   184d33a..32f6290  master -> master
+ssh cgl@helios "cd courses/dsu-cs-3005-examples-2017-40/; git pull; make install-on-helios"
+From github.com:dsu-cit/dsu-cs-3005-examples-2017-40
+   184d33a..32f6290  master     -> origin/master
+Updating 184d33a..32f6290
+Fast-forward
+ code/preprocessor/.gitignore |  1 +
+ code/preprocessor/Makefile   | 22 ++++++++++++++++++++++
+ code/preprocessor/funcs.cpp  | 16 ++++++++++++++++
+ code/preprocessor/funcs.h    | 23 +++++++++++++++++++++++
+ code/preprocessor/main.cpp   | 22 ++++++++++++++++++++++
+ update-web.log               | 23 +++++++++++++++++++++++
+ 6 files changed, 107 insertions(+)
+ create mode 100644 code/preprocessor/.gitignore
+ create mode 100644 code/preprocessor/Makefile
+ create mode 100644 code/preprocessor/funcs.cpp
+ create mode 100644 code/preprocessor/funcs.h
+ create mode 100644 code/preprocessor/main.cpp
+( cd ../dsu-cs-3005-cplusplus; make install-examples )
+make[1]: Entering directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+rm -f web/examples.examples
+ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
+make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+Sat Nov 18 10:00:01 MST 2017
+git add -A .
+x=`git status | grep 'nothing to commit' | wc -l`; \
+if [ "$x" = "0" ]; then \
+	git commit -m 'automated daily commit'; \
+fi;
+[master 33993ce] automated daily commit
+ 1 file changed, 38 insertions(+)
+git push;
+To git@github.com:dsu-cit/dsu-cs-3005-examples-2017-40.git
+   32f6290..33993ce  master -> master
+ssh cgl@helios "cd courses/dsu-cs-3005-examples-2017-40/; git pull; make install-on-helios"
+From github.com:dsu-cit/dsu-cs-3005-examples-2017-40
+   32f6290..33993ce  master     -> origin/master
+Updating 32f6290..33993ce
+Fast-forward
+ update-web.log | 38 ++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 38 insertions(+)
+( cd ../dsu-cs-3005-cplusplus; make install-examples )
+make[1]: Entering directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+rm -f web/examples.examples
+ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
+make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+Sun Nov 19 10:00:02 MST 2017
+git add -A .
+x=`git status | grep 'nothing to commit' | wc -l`; \
+if [ "$x" = "0" ]; then \
+	git commit -m 'automated daily commit'; \
+fi;
+[master 4bbb1e6] automated daily commit
+ 1 file changed, 23 insertions(+)
+git push;
+To git@github.com:dsu-cit/dsu-cs-3005-examples-2017-40.git
+   33993ce..4bbb1e6  master -> master
+ssh cgl@helios "cd courses/dsu-cs-3005-examples-2017-40/; git pull; make install-on-helios"
+From github.com:dsu-cit/dsu-cs-3005-examples-2017-40
+   33993ce..4bbb1e6  master     -> origin/master
+Updating 33993ce..4bbb1e6
+Fast-forward
+ update-web.log | 23 +++++++++++++++++++++++
+ 1 file changed, 23 insertions(+)
+( cd ../dsu-cs-3005-cplusplus; make install-examples )
+make[1]: Entering directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+rm -f web/examples.examples
+ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
+make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+Mon Nov 20 10:00:01 MST 2017
+git add -A .
+x=`git status | grep 'nothing to commit' | wc -l`; \
+if [ "$x" = "0" ]; then \
+	git commit -m 'automated daily commit'; \
+fi;
+[master 730836d] automated daily commit
+ 1 file changed, 23 insertions(+)
+git push;
+To git@github.com:dsu-cit/dsu-cs-3005-examples-2017-40.git
+   4bbb1e6..730836d  master -> master
+ssh cgl@helios "cd courses/dsu-cs-3005-examples-2017-40/; git pull; make install-on-helios"
+From github.com:dsu-cit/dsu-cs-3005-examples-2017-40
+   4bbb1e6..730836d  master     -> origin/master
+Updating 4bbb1e6..730836d
+Fast-forward
+ update-web.log | 23 +++++++++++++++++++++++
+ 1 file changed, 23 insertions(+)
+( cd ../dsu-cs-3005-cplusplus; make install-examples )
+make[1]: Entering directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+rm -f web/examples.examples
+ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
+make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+Tue Nov 21 10:00:01 MST 2017
+git add -A .
+x=`git status | grep 'nothing to commit' | wc -l`; \
+if [ "$x" = "0" ]; then \
+	git commit -m 'automated daily commit'; \
+fi;
+[master 744d99f] automated daily commit
+ 1 file changed, 23 insertions(+)
+git push;
+To git@github.com:dsu-cit/dsu-cs-3005-examples-2017-40.git
+   730836d..744d99f  master -> master
+ssh cgl@helios "cd courses/dsu-cs-3005-examples-2017-40/; git pull; make install-on-helios"
+From github.com:dsu-cit/dsu-cs-3005-examples-2017-40
+   730836d..744d99f  master     -> origin/master
+Updating 730836d..744d99f
+Fast-forward
+ update-web.log | 23 +++++++++++++++++++++++
+ 1 file changed, 23 insertions(+)
+( cd ../dsu-cs-3005-cplusplus; make install-examples )
+make[1]: Entering directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+rm -f web/examples.examples
+ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
+make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+Wed Nov 22 10:00:01 MST 2017
+git add -A .
+x=`git status | grep 'nothing to commit' | wc -l`; \
+if [ "$x" = "0" ]; then \
+	git commit -m 'automated daily commit'; \
+fi;
+[master b814fba] automated daily commit
+ 1 file changed, 23 insertions(+)
+git push;
+To git@github.com:dsu-cit/dsu-cs-3005-examples-2017-40.git
+   744d99f..b814fba  master -> master
+ssh cgl@helios "cd courses/dsu-cs-3005-examples-2017-40/; git pull; make install-on-helios"
+From github.com:dsu-cit/dsu-cs-3005-examples-2017-40
+   744d99f..b814fba  master     -> origin/master
+Updating 744d99f..b814fba
+Fast-forward
+ update-web.log | 23 +++++++++++++++++++++++
+ 1 file changed, 23 insertions(+)
+( cd ../dsu-cs-3005-cplusplus; make install-examples )
+make[1]: Entering directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+rm -f web/examples.examples
+ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
+make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+Thu Nov 23 10:00:01 MST 2017
+git add -A .
+x=`git status | grep 'nothing to commit' | wc -l`; \
+if [ "$x" = "0" ]; then \
+	git commit -m 'automated daily commit'; \
+fi;
+[master 5a528ca] automated daily commit
+ 1 file changed, 23 insertions(+)
+git push;
+To git@github.com:dsu-cit/dsu-cs-3005-examples-2017-40.git
+   b814fba..5a528ca  master -> master
+ssh cgl@helios "cd courses/dsu-cs-3005-examples-2017-40/; git pull; make install-on-helios"
+From github.com:dsu-cit/dsu-cs-3005-examples-2017-40
+   b814fba..5a528ca  master     -> origin/master
+Updating b814fba..5a528ca
+Fast-forward
+ update-web.log | 23 +++++++++++++++++++++++
+ 1 file changed, 23 insertions(+)
+( cd ../dsu-cs-3005-cplusplus; make install-examples )
+make[1]: Entering directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+rm -f web/examples.examples
+ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
+make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+Fri Nov 24 10:00:01 MST 2017
+git add -A .
+x=`git status | grep 'nothing to commit' | wc -l`; \
+if [ "$x" = "0" ]; then \
+	git commit -m 'automated daily commit'; \
+fi;
+[master 4dd0d40] automated daily commit
+ 1 file changed, 23 insertions(+)
+git push;
+To git@github.com:dsu-cit/dsu-cs-3005-examples-2017-40.git
+   5a528ca..4dd0d40  master -> master
+ssh cgl@helios "cd courses/dsu-cs-3005-examples-2017-40/; git pull; make install-on-helios"
+From github.com:dsu-cit/dsu-cs-3005-examples-2017-40
+   5a528ca..4dd0d40  master     -> origin/master
+Updating 5a528ca..4dd0d40
+Fast-forward
+ update-web.log | 23 +++++++++++++++++++++++
+ 1 file changed, 23 insertions(+)
+( cd ../dsu-cs-3005-cplusplus; make install-examples )
+make[1]: Entering directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+rm -f web/examples.examples
+ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
+make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+Sat Nov 25 10:00:01 MST 2017
+git add -A .
+x=`git status | grep 'nothing to commit' | wc -l`; \
+if [ "$x" = "0" ]; then \
+	git commit -m 'automated daily commit'; \
+fi;
+[master fc64470] automated daily commit
+ 1 file changed, 23 insertions(+)
+git push;
+To git@github.com:dsu-cit/dsu-cs-3005-examples-2017-40.git
+   4dd0d40..fc64470  master -> master
+ssh cgl@helios "cd courses/dsu-cs-3005-examples-2017-40/; git pull; make install-on-helios"
+From github.com:dsu-cit/dsu-cs-3005-examples-2017-40
+   4dd0d40..fc64470  master     -> origin/master
+Updating 4dd0d40..fc64470
+Fast-forward
+ update-web.log | 23 +++++++++++++++++++++++
+ 1 file changed, 23 insertions(+)
+( cd ../dsu-cs-3005-cplusplus; make install-examples )
+make[1]: Entering directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+rm -f web/examples.examples
+ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
+make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+Sun Nov 26 10:00:01 MST 2017
+git add -A .
+x=`git status | grep 'nothing to commit' | wc -l`; \
+if [ "$x" = "0" ]; then \
+	git commit -m 'automated daily commit'; \
+fi;
+[master 5fc240d] automated daily commit
+ 1 file changed, 23 insertions(+)
+git push;
+To git@github.com:dsu-cit/dsu-cs-3005-examples-2017-40.git
+   fc64470..5fc240d  master -> master
+ssh cgl@helios "cd courses/dsu-cs-3005-examples-2017-40/; git pull; make install-on-helios"
+From github.com:dsu-cit/dsu-cs-3005-examples-2017-40
+   fc64470..5fc240d  master     -> origin/master
+Updating fc64470..5fc240d
+Fast-forward
+ update-web.log | 23 +++++++++++++++++++++++
+ 1 file changed, 23 insertions(+)
+( cd ../dsu-cs-3005-cplusplus; make install-examples )
+make[1]: Entering directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+rm -f web/examples.examples
+ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
+make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+Mon Nov 27 10:00:01 MST 2017
+git add -A .
+x=`git status | grep 'nothing to commit' | wc -l`; \
+if [ "$x" = "0" ]; then \
+	git commit -m 'automated daily commit'; \
+fi;
+[master 859ef8b] automated daily commit
+ 7 files changed, 100 insertions(+)
+ create mode 100644 code/debugging/.gitignore
+ create mode 100644 code/debugging/Makefile
+ create mode 100644 code/debugging/main.cpp
+ create mode 100644 code/debugging/main2.cpp
+ create mode 100644 code/memory_test/.gitignore
+git push;
+To git@github.com:dsu-cit/dsu-cs-3005-examples-2017-40.git
+   5fc240d..859ef8b  master -> master
+ssh cgl@helios "cd courses/dsu-cs-3005-examples-2017-40/; git pull; make install-on-helios"
+From github.com:dsu-cit/dsu-cs-3005-examples-2017-40
+   5fc240d..859ef8b  master     -> origin/master
+Updating 5fc240d..859ef8b
+Fast-forward
+ code/debugging/.gitignore   |  3 +++
+ code/debugging/Makefile     | 21 +++++++++++++++++++++
+ code/debugging/main.cpp     | 25 +++++++++++++++++++++++++
+ code/debugging/main2.cpp    | 24 ++++++++++++++++++++++++
+ code/memory_test/.gitignore |  2 ++
+ code/memory_test/Makefile   |  2 ++
+ update-web.log              | 23 +++++++++++++++++++++++
+ 7 files changed, 100 insertions(+)
+ create mode 100644 code/debugging/.gitignore
+ create mode 100644 code/debugging/Makefile
+ create mode 100644 code/debugging/main.cpp
+ create mode 100644 code/debugging/main2.cpp
+ create mode 100644 code/memory_test/.gitignore
+( cd ../dsu-cs-3005-cplusplus; make install-examples )
+make[1]: Entering directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+rm -f web/examples.examples
+ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
+make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+Tue Nov 28 10:00:01 MST 2017
+git add -A .
