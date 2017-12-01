@@ -1860,3 +1860,22 @@ Makefile:14: recipe for target 'update-web' failed
 make: *** [update-web] Error 1
 Thu Nov 30 10:00:01 MST 2017
 git add -A .
+x=`git status | grep 'nothing to commit' | wc -l`; \
+if [ "$x" = "0" ]; then \
+	git commit -m 'automated daily commit'; \
+fi;
+[master 404723d] automated daily commit
+ 1 file changed, 19 insertions(+)
+git push;
+To git@github.com:dsu-cit/dsu-cs-3005-examples-2017-40.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'git@github.com:dsu-cit/dsu-cs-3005-examples-2017-40.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+Makefile:14: recipe for target 'update-web' failed
+make: *** [update-web] Error 1
+Fri Dec  1 10:00:01 MST 2017
+git add -A .
