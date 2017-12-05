@@ -1948,3 +1948,41 @@ ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
 make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
 Mon Dec  4 10:00:01 MST 2017
 git add -A .
+x=`git status | grep 'nothing to commit' | wc -l`; \
+if [ "$x" = "0" ]; then \
+	git commit -m 'automated daily commit'; \
+fi;
+[master e5c0979] automated daily commit
+ 6 files changed, 80 insertions(+)
+ create mode 100644 code/recursion/Makefile
+ create mode 100755 code/recursion/factorial
+ create mode 100644 code/recursion/factorial.cpp
+ create mode 100755 code/recursion/fibonacci
+ create mode 100644 code/recursion/fibonacci.cpp
+git push;
+To git@github.com:dsu-cit/dsu-cs-3005-examples-2017-40.git
+   17aca53..e5c0979  master -> master
+ssh cgl@helios "cd courses/dsu-cs-3005-examples-2017-40/; git pull; make install-on-helios"
+From github.com:dsu-cit/dsu-cs-3005-examples-2017-40
+   17aca53..e5c0979  master     -> origin/master
+Updating 17aca53..e5c0979
+Fast-forward
+ code/recursion/Makefile      |  11 +++++++++++
+ code/recursion/factorial     | Bin 0 -> 9312 bytes
+ code/recursion/factorial.cpp |  23 +++++++++++++++++++++++
+ code/recursion/fibonacci     | Bin 0 -> 9304 bytes
+ code/recursion/fibonacci.cpp |  23 +++++++++++++++++++++++
+ update-web.log               |  23 +++++++++++++++++++++++
+ 6 files changed, 80 insertions(+)
+ create mode 100644 code/recursion/Makefile
+ create mode 100755 code/recursion/factorial
+ create mode 100644 code/recursion/factorial.cpp
+ create mode 100755 code/recursion/fibonacci
+ create mode 100644 code/recursion/fibonacci.cpp
+( cd ../dsu-cs-3005-cplusplus; make install-examples )
+make[1]: Entering directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+rm -f web/examples.examples
+ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
+make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+Tue Dec  5 10:00:01 MST 2017
+git add -A .
