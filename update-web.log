@@ -2067,3 +2067,26 @@ ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
 make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
 Fri Dec  8 10:00:02 MST 2017
 git add -A .
+x=`git status | grep 'nothing to commit' | wc -l`; \
+if [ "$x" = "0" ]; then \
+	git commit -m 'automated daily commit'; \
+fi;
+[master f90af00] automated daily commit
+ 1 file changed, 23 insertions(+)
+git push;
+To git@github.com:dsu-cit/dsu-cs-3005-examples-2017-40.git
+   ff4ca32..f90af00  master -> master
+ssh cgl@helios "cd courses/dsu-cs-3005-examples-2017-40/; git pull; make install-on-helios"
+From github.com:dsu-cit/dsu-cs-3005-examples-2017-40
+   ff4ca32..f90af00  master     -> origin/master
+Updating ff4ca32..f90af00
+Fast-forward
+ update-web.log | 23 +++++++++++++++++++++++
+ 1 file changed, 23 insertions(+)
+( cd ../dsu-cs-3005-cplusplus; make install-examples )
+make[1]: Entering directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+rm -f web/examples.examples
+ln -s ../../dsu-cs-3005-examples-2017-40/code web/examples.examples
+make[1]: Leaving directory '/home/cgl/courses/dsu-cs-3005-cplusplus'
+Sat Dec  9 10:00:01 MST 2017
+git add -A .
